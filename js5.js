@@ -119,4 +119,23 @@ fetch("https://api.github.com/users")
 }))
 .then(res => console.log("Completed!!"));
 
-//
+//Async/await
+async function getImages(){
+	let res= await fetch("https://api.github.com/users");
+	let jsn = await res.json();
+
+	let h1= document.createElement('h1');
+	h1.innerHTML = "Images from Github API Async/Await";
+	document.body.append(h1);
+	console.log(jsn);
+	for(let x in jsn){
+		let img= document.createElement('img');
+		img.src= jsn[x].avatar_url;
+		img.height = 100;
+		img.title= jsn[x].login;
+		img.className = 'exp'+jsn[x].id;
+		document.body.append(img);
+	}
+	return jsn;
+}
+getImages();
