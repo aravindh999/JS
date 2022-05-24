@@ -87,11 +87,11 @@
 // console.log(f1());
 // console.log(fun1(23));
 
-import User from "./auth/b.js";
+import User from "./b.js";
 let user = new User("John");
 console.log(user);
 
-let { f1, fun1 } = await import("./auth/a.js");
+let { f1, fun1 } = await import("./a.js");
 console.log(f1());
 console.log(fun1(3.5));
 
