@@ -87,7 +87,7 @@
 // console.log(f1());
 // console.log(fun1(23));
 
-import User from "./b.js";
+import User from  "./b.js";
 let user = new User("John");
 console.log(user);
 
