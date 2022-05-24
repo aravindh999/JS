@@ -1,12 +1,27 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
-	<script src="js5.js"></script>
-</head>
-<body>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="js6.js" type="module"></script>
+    </head>
+    <body>
+        <table id="table">
+            <tr>
+                <td>one</td>
+                <td>two</td>
+            </tr>
+            <tr>
+                <td>three</td>
+                <td>four</td>
+            </tr>
+        </table>
 
-</body>
+        <script>
+            let td = table.rows[0].cells[1];
+            td.style.backgroundColor = "red";
+        </script>
+    </body>
 </html>
